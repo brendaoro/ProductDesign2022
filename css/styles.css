@@ -4,7 +4,7 @@ html, body {
   }
   
   body {
-    background: #ffffff;
+    background: #ffa3a3;
   }
   
   @keyframes move {
@@ -30,7 +30,6 @@ body a:hover
 {
     color: #685bd8;
 }
-
 
 .wrapper {
     margin: auto;
@@ -84,8 +83,6 @@ body {
   padding-bottom: 2rem;
   box-sizing: border-box;
 }
-
-
 
 a {
   color: #212534;
@@ -179,7 +176,6 @@ a {
     /* background: linear-gradient(90deg, rgba(225,248,255,1) 0%, rgba(255,201,150,1) 51%, rgba(255,193,215,1) 77%, rgba(191,255,220,1) 92%);     background: #191c29;
  */
 }
-
 
 .banner-gnt{
     background-repeat: no-repeat;
@@ -281,7 +277,6 @@ a {
     color: #a9a9a9;
     display: inline;
     margin: 7px;
-
 }
 
 .grid {
@@ -368,8 +363,7 @@ a {
     &:hover {
         .card__image {
           filter: contrast(100%);
-        }
-      
+        } 
     }
 }
 
