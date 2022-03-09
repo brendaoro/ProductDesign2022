@@ -33,7 +33,7 @@ body a:hover
 
 
 body {
-    min-height: 310vh;
+  min-height: 310vh;
   align-items: center;
   flex-direction: column;
   padding-bottom: 2rem;
@@ -486,7 +486,7 @@ body {
 
 @media screen and (max-width: 650px) {
 body {
-    min-height: 310vh
+    min-height: 350vh
 }
     .wrapper-portafolio {
         width: 330px;
