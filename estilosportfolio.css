@@ -50,18 +50,22 @@ a {
 .container-portfolio {
     width: 100%;
     height: 600px;
-    background-color: #000000;
+    background-color: #DB2511;
     display: flex;
     place-content: center;
     align-items: center;
     position: relative;
 }
 
+
+
 .banner-portfolio {
     background-color: #444446;
     opacity: .4;
     width: 100%;
     height: 100%;
+    filter: blur(2.5px);
+
 }
 
 .grid_one {
@@ -96,11 +100,19 @@ a {
     text-align: center;
 }
 
-.extraimgs {
-    display: flex;
-    width: 369px;
+.extraimgscontainer {
     margin-top: 50px;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.extraimgs {
+    display: inline;
+  
+
+
 }
 
 .textodark {
