@@ -672,12 +672,12 @@ body {
 }
 
 .card--2 .card__img, .card--2 .card__img--hover {
-    background-image: url(/demo-images/kepler.png);
+    background-image: url(ProductDesign/demo-images/kepler.png);
     left: 0;
 }
 
 .card--3 .card__img, .card--3 .card__img--hover {
-    background-image: url(/demo-images/peninsula.png);
+    background-image: url(2022/ProductDesign/demo-images/peninsula.png);
     left: 0;
 }
 
