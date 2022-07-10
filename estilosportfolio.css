@@ -1,6 +1,8 @@
 html, body {
     height: 100%;
     overflow: hidden;
+    min-height:100%;
+    overflow-y:auto;
   }
   
   body {
@@ -17,23 +19,20 @@ html, body {
     }
   }
   
-  
-
 .social-footer a{
     font-size: 30px;
     margin: 15px;
     color: #6d7581;
 };
-}
 
 body a:hover
 {
     color: #685bd8;
 }
 
-
 body {
-  min-height: 310vh;
+    min-height:100%;
+    overflow-y:auto;
   align-items: center;
   flex-direction: column;
   padding-bottom: 2rem;
@@ -50,6 +49,49 @@ a {
 .joined-portfolio {
     width: 100%;
     height: 300px;
+    background-color: #211d22;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+}
+
+.mybackground {
+    z-index: -20;
+    justify-content: center;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    animation: move 15.5s linear infinite;
+    background-image: radial-gradient(ellipse, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.267) 40%, #ffffff 65%), 
+    repeating-linear-gradient(to bottom, transparent 0 75px, #ffffff 75px 76px), repeating-linear-gradient(to right, transparent 0 75px, #ffffff 75px 76px), 
+    radial-gradient(ellipse 500px 600px at 50% 60%, #dde1ff, transparent), radial-gradient(circle 300px at 40% 40%, #55dfe5, #fbefff);
+}
+
+a.btn {
+    background: linear-gradient(45deg, rgba(255,184,115,0.65) 0%,rgba(255,124,189,0.65) 50%,rgba(108,0,153,0.65) 100%);
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px     rgba(34,62,66,.25);
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 16px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: box-shadow 1s ease;
+    transition: box-shadow 1s ease;
+  }
+  
+  a.btn:hover {
+    box-shadow: 0px 4px 4px #a6c1ee;
+    -webkit-transition: box-shadow 1s ease;
+    transition: box-shadow 1s ease;
+  }
+}  
+
+.aboutme-banner {
+    width: 100%;
+    height: 500px;
     background-color: #211d22;
     display: flex;
     place-content: center;
@@ -102,6 +144,46 @@ a {
     background-size: cover;
 }
 
+.btn {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 7px 20px #fbc2eb;
+    border-radius: 10px;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.tags {
+    display: flex;
+    
+}
+
+.tag {
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 9px;
+    font-size: 14px;
+    color: #474747;
+    display: inline;
+    margin-right: 5px;
+    margin-top: 10px;
+    outline: 1px solid #ececec;
+    box-shadow: 0 2px 13px #c6c6c6;
+}
+
 .content-button {
     background-color: #211d22;
     border: none;
@@ -113,6 +195,10 @@ a {
     transition: 0.3s;
     white-space: nowrap;
     color: white;
+}
+
+.btn-2 {
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
 }
 
 .content-button a {
@@ -207,9 +293,6 @@ hr {
 
 .extraimgs {
     display: inline;
-  
-
-
 }
 
 .textodark {
@@ -227,6 +310,16 @@ hr {
     letter-spacing: 1px;
     font-weight: 600;
     color: #868686;
+}
+
+.subtitlecenter {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #868686;
+    text-align: center;
 }
 
 .subtitle-dark {
@@ -262,8 +355,7 @@ hr {
     font-size: 25px;
     line-height: 1.3;
     font-family: 'Roboto';
-        color: #ffffff;
-
+    color: #ffffff;
 }
 
 .wrapper-portafolio {
@@ -271,6 +363,135 @@ hr {
     position: absolute;
     z-index: 555555555555555555555555;
     text-align: center;
+}
+
+.header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 15px 20px;
+    border-right: 1px solid #f4f4f4;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #7e7e7e;
+    margin: 5px;
+    text-decoration: underline;
+
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+  /* 48em = 768px */
+
+@media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
 }
 
 .description-portfolio {
@@ -304,6 +525,20 @@ hr {
     font-weight: 800;
     color: #2d4754;
     margin-bottom: 10px;
+}
+
+.about {
+    font-size: 42px;
+    font-family: 'Raleway';
+    color: #747283;
+    text-align: center;
+}
+
+.aboutme {
+    font-size: 35px;
+    font-family: 'Raleway';
+    color: #747283;
+    font-weight: bold;
 }
 
 .boldcenter {
@@ -409,7 +644,8 @@ hr {
 }
 
 body {
-        min-height: 350vh;
+    min-height:100%;
+    overflow-y:auto;
     align-items: center;
     flex-direction: column;
     padding-bottom: 2rem;
@@ -441,11 +677,11 @@ body {
     }
 
     .grid_one {
-            display: grid;
-            grid-template-columns: 406px 1fr;
-            grid-template-areas: "one last";
-            align-items: center;
-            padding: 20px;
+        display: grid;
+        grid-template-columns: 406px 1fr;
+        grid-template-areas: "one last";
+        align-items: center;
+        padding: 20px;
     }
 }
 
@@ -462,8 +698,6 @@ body {
          "one one two"
         "four four four";       
     }
-
-
 }
 
 @media screen and (max-width: 1220px) {
@@ -478,11 +712,9 @@ body {
          "one one two"
         "four four four";       
     }
-
 }
 
 @media screen and (max-width: 1066px) {
-
     .grid {
         display: grid;
         max-height: 300px;
@@ -505,7 +737,6 @@ body {
 }
 
 @media screen and (max-width: 1020px) {
-
     .grid {
         display: grid;
         max-height: 300px;
@@ -519,12 +750,10 @@ body {
          "one one two"
         "four four four";
     }
-
 }
 
 
 @media screen and (max-width: 925px) {
-
 .grid {
     display: grid;
     max-height: 300px;
@@ -541,8 +770,6 @@ body {
 
 
 @media screen and (max-width: 805px) {
-
-
     .card {
         box-shadow: 0px 17px 18px -7px rgb(0 0 0 / 29%)
     }
@@ -560,12 +787,10 @@ body {
     }
 }
 
-@media screen and (max-width: 782px)
-
-
-{
+@media screen and (max-width: 782px){
         body {
-            min-height: 375vh;
+            min-height:100%;
+            overflow-y:auto;
         }
     
     .grid_one {
@@ -583,18 +808,17 @@ body {
 
         .extraimgs {
             display: flex;
-    margin-top: 50px;
-    flex-direction: column;
+            margin-top: 50px;
+            flex-direction: column;
         }
-
-
+    } 
 }
-
 
 @media screen and (max-width: 650px) {
-body {
-    min-height: 310vh
-}
+    body {
+        min-height:100%;
+        overflow-y:auto;
+    }
     .wrapper-portafolio {
         width: 330px;
         position: absolute;
@@ -610,13 +834,7 @@ body {
     }
 }
 
-
-
 @media screen and (max-width: 320px) {
-
-
-
-
     .text {
         text-align: left;
         font-size: 20px;
