@@ -667,37 +667,37 @@ body {
 }
 
 .card--1 .card__img, .card--1 .card__img--hover {
-    background-image: url(ProductDesign/demo-images/gnt2.png);
+    background-image: url(/ProductDesign/demo-images/gnt2.png);
     left: 0;
 }
 
 .card--2 .card__img, .card--2 .card__img--hover {
-    background-image: url(ProductDesign/demo-images/kepler.png);
+    background-image: url(/ProductDesign/demo-images/kepler.png);
     left: 0;
 }
 
 .card--3 .card__img, .card--3 .card__img--hover {
-    background-image: url(2022/ProductDesign/demo-images/peninsula.png);
+    background-image: url(/ProductDesign/demo-images/peninsula.png);
     left: 0;
 }
 
 .card--4 .card__img, .card--4 .card__img--hover {
-    background-image: url(/demo-images/components.png);
+    background-image: url(/ProductDesign/demo-images/components.png);
     left: 0;
 }
 
 .card--5 .card__img, .card--5 .card__img--hover {
-    background-image: url(/demo-images/joined.png);
+    background-image: url(/ProductDesign/demo-images/joined.png);
     left: 0;
 }
 
 .card--6 .card__img, .card--6 .card__img--hover {
-    background-image: url(/demo-images/pancho.png);
+    background-image: url(/ProductDesign/demo-images/pancho.png);
     left: 0;
 }
 
 .card--7 .card__img, .card--7 .card__img--hover {
-    background-image: url(/demo-images/efevoo.png);
+    background-image: url(/ProductDesign/demo-images/efevoo.png);
     left: 0;
 }
 
