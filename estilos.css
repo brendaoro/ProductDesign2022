@@ -953,7 +953,6 @@ a.btn {
 @media screen and (max-width: 1450px) {
     .grid {
         display: grid;
-        max-height: 300px;
         width: 100%;
         grid-gap: 5rem;
         justify-content: center;
@@ -1267,7 +1266,7 @@ font-weight: 300;
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
-   /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    min-width: 150px;
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     position: relative;
@@ -1275,7 +1274,6 @@ font-weight: 300;
     text-transform: uppercase;
     font-weight: 700;
     border: none;
-    /* border-radius: 0.25em; */
     font-size: 13px;
     letter-spacing: 1px;
     border-radius: 50px;
@@ -1295,7 +1293,8 @@ font-weight: 300;
     position: relative;
     z-index: 1;
     mix-blend-mode: overlay;
-    font-family: 'Helvetica Neue';   
+    font-family: 'Helvetica Neue';
+       
   }
   
   @keyframes Gradient {
