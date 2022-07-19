@@ -184,6 +184,11 @@ a.btn {
     box-shadow: 0 2px 13px #c6c6c6;
 }
 
+.selfie {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .content-button {
     background-color: #211d22;
     border: none;
