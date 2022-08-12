@@ -142,7 +142,7 @@ a.btn {
     align-items: center;
     position: relative;
     background-size: cover;
-    background-image: url('/demo-images/keplerbanner.png');
+    background-image: url(/ProductDesign2022/demo-images/keplerbanner.png);
 }
 
 .peninsula-portfolio {
@@ -166,7 +166,7 @@ a.btn {
     align-items: center;
     position: relative;
     background-size: cover;
-    background-image: url('/ProductDesign2022/demo-images/primeraplusbanner.png');
+    background-image: url(/ProductDesign2022/demo-images/primeraplusbanner.png);
 }
 
 .btn {
