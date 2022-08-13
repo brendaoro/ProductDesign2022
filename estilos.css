@@ -497,8 +497,8 @@ a {
     row-gap: 20px;
     line-height: 1.2;
     justify-content: center;
-    grid-template-columns: repeat(3, 210px);
-    grid-template-rows: repeat(3, 310px);
+    grid-template-columns: repeat(3, 310px);
+    grid-template-rows: repeat(3, 410px);
     margin-bottom: 60px;
     grid-template-areas:
     "three three three"
@@ -676,7 +676,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 295px;
+  height: 310px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -953,7 +953,6 @@ a.btn {
         width: 100%;
         grid-gap: 5rem;
         grid-template-columns: 1fr;
-        background-color: #222222;
         grid-template-rows: 400px 400px 400px;
         grid-template-areas:
         "three three three"
@@ -1005,7 +1004,6 @@ a.btn {
         width: 100%;
         grid-gap: 5rem;
         grid-template-columns: 1fr;
-        background-color: #222222;
         grid-template-rows: 400px 400px 400px;
         grid-template-areas:
         "three three three"
@@ -1024,7 +1022,6 @@ a.btn {
     width: 100%;
     grid-gap: 5rem;
     grid-template-columns: 1fr;
-    background-color: #222222;
     grid-template-rows: 400px 400px 400px;
     grid-template-areas:
     "three three three"
@@ -1034,6 +1031,18 @@ a.btn {
 
 
 @media screen and (max-width: 805px) {
+  .grid {
+    display: grid;
+    max-height: 300px;
+    width: 100%;
+    grid-gap: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas:
+    "three three three"
+     "one one two"
+    "four four four";
+}
 
     
     .banner {
@@ -1058,6 +1067,18 @@ a.btn {
 
 @media screen and (max-width: 782px)
 {
+  .grid {
+    display: grid;
+    max-height: 300px;
+    width: 100%;
+    grid-gap: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas:
+    "three three three"
+     "one one two"
+    "four four four";
+}
 
 }
 
@@ -1084,7 +1105,7 @@ a.btn {
       background-position: center;
       background-repeat: no-repeat;
       width: 100%;
-      height: 222px; 
+      height: 310px; 
     }
 
     .grid {
@@ -1126,7 +1147,7 @@ a.btn {
       background-position: center;
       background-repeat: no-repeat;
       width: 100%;
-      height: 222px; 
+      height: 310px; 
     }
 
     .one, .two, .three {
