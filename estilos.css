@@ -660,16 +660,14 @@ a {
 .card--5 .card__img, .card--5 .card__img--hover {
     background-image: url(/ProductDesign2022/demo-images/joined.png);
     left: 0;
+    width: 400px;
 }
 
-.card--6 .card__img, .card--6 .card__img--hover {
-    background-image: url(/ProductDesign2022/demo-images/pancho.png);
-    left: 0;
-}
 
 .card--7 .card__img, .card--7 .card__img--hover {
     background-image: url(/ProductDesign2022/demo-images/efevoo.png);
     left: 0;
+    width: 400px;
 }
 
 .card__img {
