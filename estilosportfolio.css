@@ -281,10 +281,6 @@ hr {
 
 }
 
-.grid_one {
-    display: flex;
-    flex-direction: column;
-}
 
 .one_first {
     margin-bottom: 100px;
@@ -297,6 +293,23 @@ hr {
     margin-top: 100px;
 }
 
+.one_bg {
+    background-color: #ededed;
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+}
+
+.keyinsights {
+    background-color: #ededed;
+    width: 100%;
+    padding: 100px;
+    background-color: #ededed;
+    display: flex;
+    padding: 100px;
+    column-gap: 111px;
+}
+    
 .text-wrapper { 
     display: flex;
     gap: 40px;
@@ -308,6 +321,17 @@ hr {
     color: #2d4754;
     margin-bottom: 10px;
     line-height: 30px;
+}
+
+.textobold {
+    font-size: 18px;
+    font-family: 'Roboto';
+    color: #2d4754;
+    margin-bottom: 10px;
+    line-height: 30px;
+    margin: 30px;
+    font-weight: 800;
+    text-align: center;
 }
 
 .textofooter {
