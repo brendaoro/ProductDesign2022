@@ -346,6 +346,13 @@ a {
      right, transparent 0 75px, #ffffff 75px 76px), radial-gradient(ellipse 500px 600px 
      at 50% 60%, #ffffff, transparent), radial-gradient(circle 300px at 40% 40%, #ffb1e4, #fff4e6);
 }
+
+.button-flex {
+  display: flex;
+  place-content: center;
+  text-align-last: center;
+  padding: 30px;
+}
          
 
 .banner {
@@ -368,10 +375,10 @@ a {
 
 
 .banner-gnt{
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: auto;
-    margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 .banner-portfolio {
@@ -482,10 +489,10 @@ a {
     line-height: 1.2;
     justify-content: center;
     grid-template-columns: repeat(3, 310px);
-    grid-template-rows: repeat(3, 410px);
+    grid-template-rows: repeat(4, 410px);
     margin-bottom: 60px;
     grid-template-areas:
-    "onetwo onetwo onetwo"
+    "five five five"
     "three three three"
      "one one two"
     "four four four";       
@@ -500,10 +507,10 @@ a {
 
 
 .text {
-    padding: 0 40px;
-    display: flex;
-    column-gap: 57px;
-    margin-bottom: 30px;
+  padding: 0 40px;
+  display: flex;
+  column-gap: 57px;
+  margin-bottom: 30px;
 }
 
 .one {
@@ -519,21 +526,6 @@ a {
         filter: contrast(50%);
       }
     }
-}
-
-.onetwo {
-  grid-area: onetwo;
-  border-radius: 5px;
-  box-shadow: 0px 17px 18px -7px rgb(0 0 0 / 15%);
-  max-width: 800px;
-  border-radius: 0.25rem;
-  display: flex;
-  overflow: hidden;
-  &:hover {
-    .card__image {
-      filter: contrast(50%);
-    }
-  }
 }
 
 .two {
@@ -567,28 +559,29 @@ a {
 }
 
 .four {
-    grid-area: four;
-    box-shadow: 0px 17px 18px -7px rgb(0 0 0 / 15%);
-    border-radius: 0.25rem;
-    display: flex;
-    overflow: hidden;
-    &:hover {
-        .card__image {
-          filter: contrast(100%);
-        }
-      
-    }
+  grid-area: four;
+  box-shadow: 0px 17px 18px -7px rgb(0 0 0 / 15%);
+  border-radius: 0.25rem;
+  display: flex;
+  overflow: hidden;
+  &:hover {
+      .card__image {
+        filter: contrast(100%);
+      }
+    
+  }
 }
 
 .five {
-    box-shadow: 0px 17px 18px -7px rgb(0 0 0 / 15%);
-    border-radius: 0.25rem;
-    overflow: hidden;
-    &:hover {
-        .card__image {
-          filter: contrast(100%);
-        }
-    }
+  grid-area: five;
+  box-shadow: 0px 17px 18px -7px rgb(0 0 0 / 15%);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  &:hover {
+      .card__image {
+        filter: contrast(100%);
+      }
+  }
 }
 
 .card {
@@ -902,7 +895,7 @@ a.btn {
     justify-content: center;
     grid-template-rows: 400px 400px 400px;
     grid-template-areas:
-    "onetwo onetwo onetwo"
+    "five five five"
     "three three three"
      "one one two"
     "four four four";       
@@ -1050,6 +1043,7 @@ a.btn {
     grid-template-columns: 1fr;
     grid-template-rows: 400px 400px 400px;
     grid-template-areas:
+    "five five five"
     "three three three"
      "one one two"
     "four four four";
@@ -1080,11 +1074,10 @@ a.btn {
 }
 
 .grid {
-  margin: 15px;
   width: 100%;
 }
 
-.one, .two, .three {
+.one, .two, .three, .four, .five {
   padding: 0px;
 }
 

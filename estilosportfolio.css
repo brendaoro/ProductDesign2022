@@ -300,6 +300,12 @@ hr {
     text-align: center;
 }
 
+.center {
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+}
+
 .keyinsights {
     background-color: #ededed;
     width: 100%;
@@ -423,6 +429,13 @@ hr {
     line-height: 1.3;
     font-family: 'Roboto';
     color: #ffffff;
+}
+
+.button-stores {
+    display: flex;
+    column-gap: 11px;
+    padding: 19px;
+    place-content: center;
 }
 
 .wrapper-portafolio {
