@@ -642,14 +642,6 @@ a {
 .card--5 .card__img, .card--5 .card__img--hover {
     background-image: url(/ProductDesign2022/demo-images/gho.png);
     left: 0;
-    width: 400px;
-}
-
-
-.card--7 .card__img, .card--7 .card__img--hover {
-    background-image: url(/ProductDesign2022/demo-images/efevoo.png);
-    left: 0;
-    width: 400px;
 }
 
 .card__img {
