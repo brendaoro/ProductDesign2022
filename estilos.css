@@ -624,12 +624,12 @@ a {
 }
 
 .card--4 .card__img, .card--4 .card__img--hover {
-    background-image: url(/ProductDesign2022/demo-images/gho.png);
+    background-image: url(/ProductDesign2022/demo-images/components.png);
     left: 0;
 }
 
 .card--5 .card__img, .card--5 .card__img--hover {
-    background-image: url(/ProductDesign2022/demo-images/joined.png);
+    background-image: url(/ProductDesign2022/demo-images/gho.png);
     left: 0;
     width: 400px;
 }
