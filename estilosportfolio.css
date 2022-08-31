@@ -169,6 +169,18 @@ a.btn {
     background-image: url(/ProductDesign2022/demo-images/primeraplusbanner.png);
 }
 
+.gho-portfolio {
+    width: 100%;
+    height: 500px;
+    background-color: #211d22;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-image: url(/ProductDesign2022/demo-images/ghoscreens.png);
+}
+
 .btn {
     flex: 1 1 auto;
     margin: 10px;
