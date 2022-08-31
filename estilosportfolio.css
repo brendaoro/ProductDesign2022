@@ -281,7 +281,6 @@ hr {
 
 }
 
-
 .one_first {
     margin-bottom: 100px;
     margin-top: 100px;
@@ -298,6 +297,10 @@ hr {
     width: 100%;
     padding: 100px;
     text-align: center;
+}
+
+.me_grid {
+    display: flex;
 }
 
 .center {
