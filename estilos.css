@@ -493,9 +493,20 @@ a {
     margin-bottom: 60px;
     grid-template-areas:
     "five five five"
-    "three three three"
-     "one one two"
-    "four four four";       
+        "three three three"
+        "four four four";       
+}
+
+.wrapperPortfolio {
+  display: flex;
+    flex-direction: column;
+    width: 800px;
+        row-gap: 80px;
+}
+
+.wrapperCenter {
+  display: flex;
+  justify-content: center;
 }
 
 
