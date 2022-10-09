@@ -313,6 +313,7 @@ hr {
 
 .me_grid {
     display: flex;
+    margin-top: 100px;
 }
 
 .center {
